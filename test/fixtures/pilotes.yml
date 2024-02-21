@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  prenom: MyString
+  age: MyString
+  string: MyString
+  team: MyString
+  first_race: 2024-02-20
+  title: MyString
+  actually_driver: false
+  photo: MyString
+  description: MyText
+
+two:
+  nom: MyString
+  prenom: MyString
+  age: MyString
+  string: MyString
+  team: MyString
+  first_race: 2024-02-20
+  title: MyString
+  actually_driver: false
+  photo: MyString
+  description: MyText
