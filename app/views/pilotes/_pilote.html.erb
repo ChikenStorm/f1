@@ -1,49 +1,51 @@
-<div id="<%= dom_id pilote %>">
+<style>
+  #<%= dom_id(pilote) %> {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
+  /* Additional styles for other elements if needed */
+  #<%= dom_id(pilote) %> p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+
+  #<%= dom_id(pilote) %> p strong:contains("Team:") {
+    color: #28a745;
+    font-weight: bold;
+  }
+</style>
+
+<div id="<%= dom_id(pilote) %>">
   <p>
-    <img src=<%= pilote.photo %>>
-  </p>
-
-  
-  
-  <p>
-    <strong>Prenom:</strong>
-    <%= pilote.prenom %>
-  </p>
-
-  <p>
-    <strong>Nom:</strong>
-    <%= pilote.nom %>
-  </p>
-
-  <p>
-    <strong>Age:</strong>
-    <%= pilote.age %>
+    <img src="<%= pilote.photo %>" alt="<%= pilote.prenom %>">
   </p>
   <p>
-    <strong>Team:</strong>
-    <%= pilote.team %>
+    <strong>Prenom:</strong> <%= pilote.prenom %>
   </p>
-
   <p>
-    <strong>First race:</strong>
-    <%= pilote.first_race %>
+    <strong>Nom:</strong> <%= pilote.nom %>
   </p>
-
   <p>
-    <strong>Title:</strong>
-    <%= pilote.title %>
+    <strong>Age:</strong> <%= pilote.age %>
   </p>
-
   <p>
-    <strong>Actually driver:</strong>
-    <%= pilote.actually_driver %>
+    <strong>Team:</strong> <%= pilote.team %>
   </p>
-
-
   <p>
-    <strong>Description:</strong>
-    <%= pilote.description %>
+    <strong>First race:</strong> <%= pilote.first_race %>
   </p>
-
+  <p>
+    <strong>Title:</strong> <%= pilote.title %>
+  </p>
+  <p>
+    <strong>Actually driver:</strong> <%= pilote.actually_driver %>
+  </p>
+  <p>
+    <strong>Description:</strong> <%= pilote.description %>
+  </p>
 </div>
