@@ -1,20 +1,25 @@
 
 
+
+
 nav ul li{
    display: inline-block;
    list-style: none;
    margin: 10px 20px;
-}
-
-nav ul li a{
+ }
+ 
+ 
+ nav ul li a{
    color: #fff;
    text-decoration: none;
    font-size: 25px;
    position: relative;
-
-}
-
-nav ul li a::after{
+ 
+ 
+ }
+ 
+ 
+ nav ul li a::after{
    content: '';
    width: 3;
    height: 3px;
@@ -23,36 +28,266 @@ nav ul li a::after{
    left: 0;
    bottom: -6px;
    transition: 0.5s;
-}
-nav ul li a:hover::after{
+ }
+ nav ul li a:hover::after{
    width: 100%;
-
-}
-
-body {
+ 
+ 
+ }
+ 
+ 
+ body {
    text-align: center;
    font-size: 24px;
    background: #000000;
    color: #fff;
    margin: 0;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-strong {
-   color: #007bff; 
+ }
+ 
+ 
+ strong {
    color: #007bff;
-}
-
-p {
+   color: #007bff;
+ }
+ 
+ 
+ p {
    margin: 10px 0;
    line-height: 1.5;
    line-height: 1.5;
-}
-
-.image{
+ }
+ 
+ 
+ .image{
    display: flex;
    justify-content: center;
    margin: auto;
    width: 200px;
    height: 400px;
+ }
+ ::-webkit-scrollbar {
+   width: 20px;
+ }
+ ::-webkit-scrollbar-track {
+   background: #000;
+ }
+ ::-webkit-scrollbar-thumb {
+   background: #580101;
+ }
+ 
+ 
+ *{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+ }
+ 
+ 
+ 
+ 
+ /*-----------Menu-----------------*/
+ 
+ 
+ #menuIcon {
+   width: 60px;
+   position: fixed;
+   top: 40px;
+   right: 60px;
+   cursor: pointer;
+   z-index: 100;
+ }
+ .menu-box{
+   width: 0;
+   height: 0;
+   background: rgba(0, 0, 0, 0.8);
+   position: fixed;
+   top: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   justify-content: center;
+   border-bottom-left-radius: 100%;
+   transition: width 0.5s, height 0.5s, border-radius 0.5s;
+ }
+ .menu-box.open-menu{
+   width: 100%;
+   height: 100vh;
+   border-bottom-left-radius: 0;
+ }
+ .menu-box.open-menu ul li{
+   opacity: 1;
+   transform: translateY(0);
+   transition: transform 1s, opacity 1s;
+   transition-delay: 0.5s;
+ }
+ .menu-box ul li{
+   list-style: none;
+   margin: 40px;
+   text-align: center;
+   opacity: 0;   
+   transform: translateY(30px);
+ }
+ .menu-box ul li a{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 50px;
+   font-weight: 600;
+   position: relative;
+   text-shadow: 0 0 0 red;
+   transition: text-shadow 0.5s, transform 0.5s;
+ }
+ .menu-box ul li a:hover{
+   text-shadow: -3px 3px 0 red;
+   transform: translateY(-6px);
+ }
+   .menu-box ul li a::after{
+   content: '';
+   width: 10px; height: 10px;
+   border-radius: 50%;
+   background: #fff;
+   position: absolute;
+   bottom: 19px;
+   right: -18px;
+   opacity: 0;
+   box-shadow: 0 0 0 red;
+   transition: box-shadow p.5s;
+ }
+ .menu-box ul li a:hover::after{
+   opacity: 1;
+   box-shadow: -2px 2px 0 red;
+ }
+ #header{
+   width: 100%;
+   height: 100vh;
+   background-image: url(https://theformulaone.netlify.app/images/Background/3bc3d4abf8f720d998aa130d118b2446.png);
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ 
+ .container{
+   padding: 10px 10%;
+ }
+ /*-------------------Titre------------------*/
+ .text-box{
+   color: #fff;
+   position: absolute;
+   bottom: 8%;
+ }
+ .text-box p{
+   font-size: 50px;
+   font-weight: 600;
+ }
+ .text-box h1{
+   font-size: 200px;
+   line-height: 990px;
+   margin-left: 40px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   background: url(https://theformulaone.netlify.app/images/site/back.png);
+   -webkit-background-clip: text;
+   background-position: 0 0 ;
+   animation:back 20s linear infinite;
+ }
+ @keyframes back{
+   100%{
+   background-position: 2000px 0;
    }
+ }
+ .text-boxx h1{
+   font-size: 90px;
+   line-height: 300px;
+   margin-left: 50px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+   background: url(https://theformulaone.netlify.app/images/site/back.png);
+   -webkit-background-clip: text;
+   background-position: 0 0 ;
+   animation:back 20s linear infinite;
+ }
+ 
+ 
+ /*-------------------First--------------------*/
+ 
+ 
+ #about{
+   padding: 70px 0;
+   color: #ababab;
+  
+ }
+ .row{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .about-col-1{
+   flex-basis: 35%;
+ }
+ .about-col-1 img{
+   width: 135%;
+   border-radius: 25px;
+ 
+ 
+ }
+ .about-col-2 {
+   flex-basis: 50%;
+   font-size: 22px;
+  
+ }
+ .about-col-3 {
+ flex-basis: 500%;
+ font-size: 22px;
+ margin-top: 720px;
+ }
+ .sub-title{
+   font-size: 55px;
+   font-weight: 500;
+   color: #fff;
+ }
+ .tab-titles{
+   display: flex;
+   margin: 20px 0 50px;
+ }
+ .tab-links{
+   margin-right: 40px;
+   font-size: 40px;
+   font-weight: 500;
+   color: #fff;
+   cursor: pointer;
+   position: relative;
+ }
+ 
+ 
+ .tab-contents ul li{
+   list-style: none;
+   margin-right: 25px;
+   font-size: 25px;
+   font-weight: 500;
+   color: #ffffff;
+ 
+ 
+ }
+ .tab-contents ul li span{
+   color: #8a0202;
+   margin-right: 40px;
+   font-size: 40px;
+   font-weight: 500;
+ 
+ 
+ }
+ .tab-contents{
+   display: none;
+ }
+ .tab-contents.active-tab{
+   display: block;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
