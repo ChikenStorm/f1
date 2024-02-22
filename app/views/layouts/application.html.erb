@@ -10,14 +10,50 @@
    <%= csrf_meta_tags %>
    <%= csp_meta_tag %>
 
+<<<<<<< HEAD
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
  
+<nav>
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Pilotes</a></li>
+    <li><a href="#">À Propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
   <body>
     <%= yield %>
   </body>
 
+<footer class="site-footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Pilotes</a></li>
+          <li><a href="#">À Propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="https://www.facebook.com/Formula1/?locale=fr_FR"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+        <li><a href="https://twitter.com/F1"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.instagram.com/f1/"><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://www.youtube.com/@Formula1"><i class="fab fa-youtube"></i>Youtube</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+=======
+
+   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+   <%= javascript_importmap_tags %>
+ </head>
 <div id="header">
    <div class="text-box">
        <h1>FORMULE 1 </h1>
@@ -28,14 +64,14 @@
        <img src="https://theformulaone.netlify.app/images/site/menu.png" id="menuIcon">
        <div class="menu-box" id="menuBox">
            <ul>
-               <li><a href="index.html">Acceuil</a></li>
+               <li><a href="index.html">Accueil</a></li>
                <li><a href="Pilote.html">Pilotes</a></li>
                <li><a href="team.html">Team</a></li>
            </ul>
        </div>
        <div class="row">
            <div class="about-col-1">
-               <img src="https://theformulaone.netlify.app/images/Background/laf1.jpg">
+               <img src="https://cdn.midjourney.com/36dcff3a-ea72-4801-96df-87445dceae03/0_3.webp">
            </div>
            <div class="about-col-2">
                <h1 class="sub-title">C'est quoi la Formule 1</h1>
@@ -44,9 +80,6 @@
        </div>
    </div>
 </div>
-
-
-
 
 <script>
    let menuBox = document.getElementById("menuBox");
@@ -87,6 +120,7 @@
  <body>
    <%= yield %>
  </body>
+>>>>>>> c9b6c6bcd7d686da044d5484bf3caf19f7362fd3
 </html>
 
 
