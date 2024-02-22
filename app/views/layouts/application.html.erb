@@ -12,16 +12,48 @@
     <%= javascript_importmap_tags %>
   </head>
  
-<nav>
-  <ul>
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#">À Propos</a></li>
-    <li><a href="#">Creations</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+<div id="header">
+    <div class="text-box">
+        <h1>FORMULE 1 </h1>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <img src="https://theformulaone.netlify.app/images/site/menu.png" id="menuIcon">
+        <div class="menu-box" id="menuBox">
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="Pilote.html">Pilotes</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://theformulaone.netlify.app/images/Background/laf1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">C'est quoi la Formule 1</h1>
+                <p>La Formule 1 est la catégorie reine du sport automobile. Elle désigne un type de course de voitures de course monoplaces, qui se déroule sur des circuits spécialement conçus pour cela. Les voitures de Formule 1 sont les plus rapides et les plus technologiquement avancées au monde. Elles sont propulsées par des moteurs puissants qui peuvent atteindre des vitesses allant jusqu'à 360 km/h. Les courses de Formule 1 sont organisées par la Fédération Internationale de l'Automobile (FIA) et se déroulent tout au long de l'année, dans des pays du monde entier. Les pilotes de Formule 1 sont considérés comme les meilleurs du monde, et la course elle-même est suivie par des millions de fans à travers le monde.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    
+
+<script>
+    let menuBox = document.getElementById("menuBox");
+    let menuIcon = document.getElementById("menuIcon");
+
+    menuIcon.onclick = function () {
+        menuBox.classList.toggle("open-menu");
+
+        if (menuBox.classList.contains("open-menu")) {
+            menuIcon.src = "images/site/close.png";
+        } else {
+            menuIcon.src = "images/site/menu.png";
+        }
+    };
+</script>
   <body>
     <%= yield %>
   </body>
