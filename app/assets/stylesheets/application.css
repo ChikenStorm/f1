@@ -65,6 +65,41 @@ nav ul li{
    margin: auto;
    width: 200px;
    height: 400px;
+}
+
+.footer-social ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .footer-social ul li {
+   display: inline-block;
+   margin-right: 100px;
+ }
+ 
+ .footer-social ul li:hover {
+   color: black;
+   background-color: darkslateblue;
+   scale: 1.1;
+   font-size: 18px;
+   border-radius: 5px;
+ }
+ footer {
+   padding-bottom: 50px;
+   background-color: #1b1414;
+ }
+ 
+ .footer-social ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+ }
+
+ .footer-nav ul li {
+   display: inline-block;
+   margin-right: 200px; 
+ }
  }
  ::-webkit-scrollbar {
    width: 20px;

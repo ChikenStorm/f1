@@ -8,6 +8,46 @@
    <%= csrf_meta_tags %>
    <%= csp_meta_tag %>
 
+<<<<<<< HEAD
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+ 
+<nav>
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Pilotes</a></li>
+    <li><a href="#">À Propos</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  <body>
+    <%= yield %>
+  </body>
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Pilotes</a></li>
+          <li><a href="#">À Propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+      <ul>
+        <li><a href="https://www.facebook.com/Formula1/?locale=fr_FR"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+        <li><a href="https://twitter.com/F1"><i class="fab fa-twitter"></i>Twitter</a></li>
+        <li><a href="https://www.instagram.com/f1/"><i class="fab fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://www.youtube.com/@Formula1"><i class="fab fa-youtube"></i>Youtube</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+=======
 
    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
    <%= javascript_importmap_tags %>
@@ -61,6 +101,7 @@
  <body>
    <%= yield %>
  </body>
+>>>>>>> c9b6c6bcd7d686da044d5484bf3caf19f7362fd3
 </html>
 
 
