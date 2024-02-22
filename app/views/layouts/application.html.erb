@@ -9,11 +9,24 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <header>
-    <nav>
-        <ul>
-        </ul> 
-    </nav> 
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Creations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hader-text">
+            <p>Formula one</p>
+            <h1>Welcome,<br> One  <span> pilote</span> car </h1>
+        </div>
+    </div>
+</div>
+    
   <body>
     <%= yield %>
   </body>
