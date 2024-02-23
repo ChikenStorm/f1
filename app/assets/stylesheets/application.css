@@ -19,9 +19,9 @@ nav ul li a{
 }
 
 
-nav ul li a::after{
+nav ul li a::after {
   content: '';
-  width: 3;
+  width: 3px; 
   height: 3px;
   background: red;
   position: absolute;
@@ -29,6 +29,7 @@ nav ul li a::after{
   bottom: -6px;
   transition: 0.5s;
 }
+
 nav ul li a:hover::after{
   width: 100%;
 
