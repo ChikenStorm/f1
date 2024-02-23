@@ -64,8 +64,8 @@ nav ul li{
    justify-content: left;
    margin-left: 50px;
    margin-top: 100px;
-   height:auto;
-   width: 300px;
+   height:fit-content;
+   width: max-content;
 }
  
  /*-----------footer-----------------*/
