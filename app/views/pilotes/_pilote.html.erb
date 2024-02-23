@@ -1,10 +1,12 @@
 
 
-<div id="<%= dom_id(pilote) %>">
-  
-  <p class="image">
-    <img src="<%= pilote.photo %>" alt="<%= pilote.photo %>">
-  </p>
+<div class="pilots" id="<%= dom_id(pilote) %>">
+  <div class="photo">
+    <p class="image">
+      <img src="<%= pilote.photo %>" alt="<%= pilote.photo %>">
+    </p>
+  </div>
+  <div class="desc">
   <p>
     <strong>Prenom:</strong> <%= pilote.prenom %>
   </p>
@@ -29,5 +31,6 @@
   <p>
     <strong>Description:</strong> <%= pilote.description %>
   </p>
+  </div>
 </div>
 

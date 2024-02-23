@@ -37,7 +37,7 @@ nav ul li{
  
  
  body {
-   text-align: center;
+  text-align:center;
    font-size: 24px;
    background: #000000;
    color: #fff;
@@ -61,10 +61,11 @@ nav ul li{
  
  .image{
    display: flex;
-   justify-content: center;
-   margin: auto;
-   width: 200px;
-   height: 400px;
+   justify-content: left;
+   margin-left: 100px;
+   margin-top: 100px;
+   width: 250px;
+   height: 500px;
 }
  
  /*-----------footer-----------------*/
@@ -255,12 +256,10 @@ footer {
  
  
  /*-------------------First--------------------*/
- 
- 
+
  #about{
    padding: 70px 0;
    color: #ababab;
-  
  }
  .row{
    display: flex;
@@ -273,13 +272,10 @@ footer {
  .about-col-1 img{
    width: 135%;
    border-radius: 25px;
- 
- 
  }
  .about-col-2 {
    flex-basis: 50%;
    font-size: 22px;
-  
  }
  .about-col-3 {
  flex-basis: 500%;
@@ -303,34 +299,36 @@ footer {
    cursor: pointer;
    position: relative;
  }
- 
- 
  .tab-contents ul li{
    list-style: none;
    margin-right: 25px;
    font-size: 25px;
    font-weight: 500;
    color: #ffffff;
- 
- 
  }
  .tab-contents ul li span{
    color: red;
    margin-right: 40px;
    font-size: 40px;
    font-weight: 500;
- 
- 
  }
  .tab-contents{
    display: none;
  }
  .tab-contents.active-tab{
    display: block;
- 
- 
  }
- 
- 
+.pilots{
+  display: flex;
+}
+body .desc{
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 700px;
+  width: 900px;
+  padding-bottom: 100px;
+}
  
  
