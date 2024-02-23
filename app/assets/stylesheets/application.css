@@ -317,18 +317,10 @@ footer {
  }
  .tab-contents.active-tab{
    display: block;
+ 
+ 
  }
-.pilots{
-  display: flex;
-}
-body .desc{
-  display: flex;
-  text-align: start;
-  flex-direction: column;
-  margin-top: 80px;
-  margin-left: 100px;
-  width: 900px;
-  padding-bottom: 100px;
-}
+ 
+ 
  
  
