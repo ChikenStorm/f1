@@ -4,8 +4,8 @@
 <%= render @pilote %>
 
 <div>
-  <%= link_to "Edit this pilote", edit_pilote_path(@pilote),  %> |
-  <%= link_to "Back to pilotes", pilotes_path, %>
+  <%= link_to "Edit this pilote", edit_pilote_path(@pilote), class: "custom-button" %> |
+  <%= link_to "Back to pilotes", pilotes_path, class: "custom-button" %>
 
-  <%= button_to "Destroy this pilote", @pilote, method: :delete %>
+  <%= button_to "Destroy this pilote", @pilote, class: "custom-button" method: :delete %>
 </div>
