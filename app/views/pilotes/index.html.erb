@@ -6,9 +6,9 @@
   <% @pilotes.each do |pilote| %>
     <%= render pilote %>
     <p>
-      <%= link_to "Show this pilote", pilote %>
+      <%= link_to "Show this pilote", pilote, class: "custom-button" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New pilote", new_pilote_path %>
+<%= link_to "New pilote", new_pilote_path, class: "custom-button" %>
