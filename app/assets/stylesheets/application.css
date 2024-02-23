@@ -37,7 +37,7 @@ nav ul li{
  
  
  body {
-   text-align: center;
+  text-align:center;
    font-size: 24px;
    background: #000000;
    color: #fff;
@@ -61,10 +61,11 @@ nav ul li{
  
  .image{
    display: flex;
-   justify-content: center;
-   margin: auto;
-   width: 200px;
-   height: 400px;
+   justify-content: left;
+   margin-left: 50px;
+   margin-top: 100px;
+   height: max-content;
+   width: max-content;
 }
  
  /*-----------footer-----------------*/
@@ -255,12 +256,10 @@ footer {
  
  
  /*-------------------First--------------------*/
- 
- 
+
  #about{
    padding: 70px 0;
    color: #ababab;
-  
  }
  .row{
    display: flex;
@@ -273,13 +272,10 @@ footer {
  .about-col-1 img{
    width: 135%;
    border-radius: 25px;
- 
- 
  }
  .about-col-2 {
    flex-basis: 50%;
    font-size: 22px;
-  
  }
  .about-col-3 {
  flex-basis: 500%;
@@ -303,24 +299,18 @@ footer {
    cursor: pointer;
    position: relative;
  }
- 
- 
  .tab-contents ul li{
    list-style: none;
    margin-right: 25px;
    font-size: 25px;
    font-weight: 500;
    color: #ffffff;
- 
- 
  }
  .tab-contents ul li span{
    color: red;
    margin-right: 40px;
    font-size: 40px;
    font-weight: 500;
- 
- 
  }
  .tab-contents{
    display: none;
@@ -331,20 +321,6 @@ footer {
  
  }
  
-
-.custom-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: red;
-  color: #ffffff; 
-  text-decoration: none;
-  border-radius: 5px; 
-  transition: background-color 0.3s ease;
-}
-
-.custom-button:hover {
-  background-color: red; 
-}
-
+ 
  
  
