@@ -1,13 +1,11 @@
-<div class="profile-header">
-  <h1><%= @pilote.prenom %> <%= @pilote.nom %></h1>
-  <p class="success-message"><%= notice %></p>
-</div>
+<h1> <%= @pilote.prenom %> <%= @pilote.nom %></h1>
+<p style="color: green"><%= notice %></p>
 
 <%= render @pilote %>
 
-<div class="profile-actions">
-  <%= link_to "Edit Profile", edit_pilote_path(@pilote), class: "custom-button" %> |
-  <%= link_to "Back to Pilotes", pilotes_path, class: "custom-button" %>
+<div>
+  <%= link_to "Edit this pilote", edit_pilote_path(@pilote), class: "custom-button" %> |
+  <%= link_to "Back to pilotes", pilotes_path, class: "custom-button" %>
 
-  <%= button_to "Destroy Profile", @pilote,class: "custom-button"  method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+  <%= button_to "Destroy this pilote", @pilote, class: "custom-button" method: :delete %>
 </div>
