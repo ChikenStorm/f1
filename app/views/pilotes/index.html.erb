@@ -16,12 +16,12 @@
   <% @pilotes.each do |pilote| %>
     <%= render pilote %>
     <p>
-      <div id= "custom-button">
+      <div >
       <%= link_to "Show this pilote", pilote,%>
       </div>
     </p>
   <% end %>
 </div>
-<div id= "custom-button">
+<div>
 <%= link_to "New pilote", new_pilote_path, %>
 </div>
